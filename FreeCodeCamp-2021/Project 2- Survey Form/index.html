@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistique- Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+
+
+
+   
+
+</head>
+
+
+<body class="body">
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Gallery</a>
+    <a href="#">Classes</a>
+    <a href="#">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<header id="header">
+        <h1 id= "title"> Artistique Survey Form</h1>
+        <p id="description" class="description text-center"><strong>
+            Please fill out this form and we will get in touch with you as soon as possible.
+         </strong>
+         </p>
+    
+
+    </header>
+
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your full name"
+        required
+            />
+        </div>
+
+    <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email address"
+        required
+            />
+          </div>
+
+    <div class="form-group">
+        <label id="phone-number-label" for="phone-number">Phone Number:</label>
+        <input
+        type="phone-number"
+        name="phone-number"
+        id="phone-number"
+        class="form-control"
+        placeholder="Enter your phone number"
+            />
+          </div>
+
+    <div class="form-group">
+        <label id="number-label" for="number">Age <span class="clue">(must be 18-35 years old):</span></label>
+        <input
+        type="number"
+        name="number"
+        id="number"
+        class="form-control"
+        placeholder="Age"
+        min="18"
+        max="35"
+        required
+                />
+              </div>
+    
+    <div class="form-group">
+        <label id="location-label" for="location">Location:</label>
+        <input
+        type="text"
+        name="location"
+        id="location"
+        class="form-control"
+        placeholder="Enter your city and country"
+        required
+            />
+        </div>
+
+
+    <div class="form-group">
+        <p><strong>What are you enquiring about?</strong></p>
+        <select id="dropdown" name="service" class="form-control" required>
+          <option disabled selected value>Select desired service</option>
+          <option value="student">Custom Products</option>
+          <option value="job">Individual Classes</option>
+          <option value="learner">Group Classes</option>
+          <option value="preferNo">Brand Consultation</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+    <div class="form-group">
+        <p>
+        <strong>How should we contact you?</strong>
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="contact"
+            value="phone-call"
+            type="checkbox"
+            class="input-checkbox"
+          />Phone-call</label
+        >
+        <label>
+          <input
+            name="contact"
+            value="sms"
+            type="checkbox"
+            class="input-checkbox"
+          />SMS</label
+        >
+        <label
+          ><input
+            name="contact"
+            value="email"
+            type="checkbox"
+            class="input-checkbox"
+          />Email</label
+        >
+            </div>
+
+    <div class="form-group">
+            <p><strong> Additional Comments </strong> <span class="clue">(optional):</span></p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+    <div class="form-group">
+            <p><strong>Would you like to subscribe to our monthly newsletter?</strong></p>
+            <label>
+              <input
+                name="contact-type"
+                value="yes"
+                type="radio"
+                class="input-radio"
+                checked
+              />yes</label
+            >
+            <label>
+              <input
+                name="contact-type"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />no</label
+            >
+          </div>
+
+    <div class="form-group">
+            <button type="submit" 
+            id="submit" 
+            class="submit-button">
+              Submit
+            </button>
+          </div>
+
+
+    </form>
+
+
+</div>
+
+<footer class="footer">
+    <p>Page designed by DEAsigns-COPYRIGHT 2020©.</p>
+</footer>
+    
+</body>
+</html>
